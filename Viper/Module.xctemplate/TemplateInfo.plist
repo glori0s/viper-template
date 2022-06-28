@@ -4,6 +4,10 @@
 <dict>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>MainTemplateFiles</key>
+	<string>___FILEBASENAME___.swift</string>
+	<key>SortOrder</key>
+	<string>1</string>
 	<key>Platforms</key>
 	<array>
 		<string>com.apple.platform.iphoneos</string>
@@ -18,21 +22,27 @@
 			<key>Name</key>
 			<string>Module:</string>
 			<key>Description</key>
-			<string>Name of VIPER module</string>
+			<string>Name of VIPER module to create:</string>
 			<key>Type</key>
 			<string>text</string>
 			<key>Default</key>
-			<string>Viper</string>
+			<string>ViperModule</string>
+			<key>NotPersisted</key>
+			<string>true</string>
 		</dict>
 		<dict>
 			<key>Identifier</key>
-			<string>XIB</string>
+			<string>withXIB</string>
 			<key>Name</key>
 			<string>Also create XIB file</string>
 			<key>Description</key>
-			<string>Create XIB File</string>
+			<string>Whether this VIPER module contains a view with XIB</string>
 			<key>Type</key>
 			<string>checkbox</string>
+			<key>Default</key>
+			<false/>
+			<key>NotPersisted</key>
+			<true/>
 		</dict>
 	</array>
 </dict>

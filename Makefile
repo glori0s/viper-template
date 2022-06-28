@@ -6,5 +6,5 @@ install:
 	mkdir -p $(VIPER_TEMPLATE_DIR)
 	cp -r -f $(VIPER_TEMPLATE_DIR) $(TEMPLATES_DIR)
 
-uninstall:
+deinstall:
 	rm -r -f $(TEMPLATES_DIR)/$(VIPER_TEMPLATE_DIR)
